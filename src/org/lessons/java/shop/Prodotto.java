@@ -28,15 +28,15 @@ public class Prodotto{
     }
 
 
-    public float basicPrice(){
+    public float getPrice(){
         return price;
     }
 
-    public float priceIva(){
+    public float getPriceIva(){
         return price + (price*iva)/100;
     }
 
-    public String fullName(){
+    public String getFullName(){
        return code + "-" + nameProduct;
     }
 
