@@ -33,11 +33,17 @@ public class Prodotto{
     }
 
     public float getPriceIva(){
-        return price + (price*iva)/100;
+        if(price !=0 && iva !=0){
+            return price + (price*iva)/100;
+        }
+        return 0;
     }
 
     public String getFullName(){
-       return code + "-" + nameProduct;
+        if(nameProduct != null && code !=0){
+            return code + "-" + nameProduct;
+        }
+       return null;
     }
 
 }
