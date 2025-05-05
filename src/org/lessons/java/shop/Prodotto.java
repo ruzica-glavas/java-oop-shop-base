@@ -5,7 +5,7 @@ public class Prodotto{
 
     private int code;                //Modifico il livello di accessibilità degli attributi
     private String nameProduct;
-    //private String description;
+    //private String description;   //Tolto la description e aggiunto il brand
     private String brand;
     private float price;
     private int iva;
